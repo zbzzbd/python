@@ -28,6 +28,7 @@ class  ReadFile(object):
             os.rename(self.fileName,newFileName)
         except WindowsError:
             print "系统调用失败"
+
     def Read_Line(self):
         data = [line.split(' ') for line in self.fo.readlines()]
         return data
