@@ -9,3 +9,12 @@ if __name__ == '__main__':
             m = key
 
     print '%s,%d' %(m,person[m])
+    person2={"li":18,"wang":50,"zhang":20,"sun":22}
+
+    m = 'li'
+
+    for key in person2.keys():
+        if person[m] <person.keys():
+            if person[m] <person[key]:
+                m = key
+    print '%s,%d' %(m,person[m])

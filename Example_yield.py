@@ -11,7 +11,7 @@ def deco(genNum):
     def wrapper(x):
         print "say something"
         genNum(x)
-        print "no zuo no die"
+        print "no zuo no die %d"%x
     return wrapper
 @deco
 def show(x):

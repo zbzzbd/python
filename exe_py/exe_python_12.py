@@ -11,4 +11,5 @@ fp.write(str)
 
 """
 
+print os.path.dirname(os.getcwd())
 print os.getcwd()

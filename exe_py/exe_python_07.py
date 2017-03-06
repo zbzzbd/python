@@ -8,6 +8,7 @@
 l= [1,2,3,4]
 s1=','.join(str(n) for n in l)
 print type(s1)
+print s1
 
 sum=0
 

@@ -42,7 +42,7 @@ def sortInsert():
     for i in range(len(a)):
         print a[i]
 if __name__=='__main__':
-    sortInsert()
+    #sortInsert()
     suNum()
 
 
