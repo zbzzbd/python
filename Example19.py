@@ -22,3 +22,20 @@ For example, reduce(lambda x, y: x+y, [1, 2, 3, 4, 5]) calculates ((((1+2)+3)+4)
 """
 Sn= reduce(lambda x,y:x+y,Sn)
 print Sn
+
+
+def zuhe():
+    Sn=4
+    s =4
+
+    for i in range(2,9):
+
+        if i<=2:
+            s=s*7
+        else:
+            s=s*8
+        Sn=Sn+s
+    print Sn
+
+if __name__ =='__main__':
+    zuhe()

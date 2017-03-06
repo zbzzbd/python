@@ -1,0 +1,4 @@
+504  get way
+304  redit way
+200   ok
+404   no exsit this file

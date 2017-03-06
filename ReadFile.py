@@ -28,9 +28,21 @@ class  ReadFile(object):
             os.rename(self.fileName,newFileName)
         except WindowsError:
             print "系统调用失败"
+
     def Read_Line(self):
         data = [line.split(' ') for line in self.fo.readlines()]
         return data
+
+
+    def Read_line_file(self):
+        for line in self.fo.readlines():
+            if line.find("com.wuba"):
+                self.fo1=open("log.txt","wb")
+                self.fo1.write(line)
+
+
+
+
 
     def Parsing_sort_count(self,data):
         count_200=0
@@ -48,13 +60,14 @@ class  ReadFile(object):
         return count,count_200,count_300
 
 if __name__=="__main__":
-    file= ReadFile("robotframework.log")
-    data=file.Read_Line()
-    print data
+    file= ReadFile("androdlog.txt")
+    file.Read_line_file()
     #file.Write_File("my home is")
     #print file.Read_Content(2)
     #print file.Tell_positjion()
     #file.Rename_file("text.txt")
-
+    """
     print file.Parsing_sort_count(data)
     file.Close_File()
+    """
+

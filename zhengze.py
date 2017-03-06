@@ -1,12 +1,17 @@
 #-*-coding: utf-8 -*-
 
 import re
-print(re.match('www','www.runoobo.com').span())#在起始位置开始匹配
+import os
+print os.environ.get("JMETER_HOME")
+print(re.match('www','www.runoobo.com'))#在起始位置开始匹配
 print(re.match('com','www.runoob.com'))
 
-line ="cats are smarter than dogs"
-matchObj = re.match(r'(.*) are(.*?) .*',line,re.M|re.I)
+print (re.match('www','www.runooo.com')).span()
 
+line ="cats are smarter than dogs"
+matchObj = re.match(r'(.*) are(.*)',line,re.M|re.I)
+
+print matchObj.groups()
 if matchObj:
     print "matchObj.group():",matchObj.group()
     print "matchObj.group(1)",matchObj.group(1)
